@@ -56,5 +56,5 @@ Out of scope:
 
 ## Completion Status
 
-- Status: Ready for PR review.
+- Status: Completed and merged in PR 1.
 - Known limitations: This checkpoint only creates harness documentation and lightweight validation.
