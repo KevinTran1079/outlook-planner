@@ -1,4 +1,4 @@
-import {existsSync, readdirSync, readFileSync} from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 
 const activeDir = 'docs/exec-plans/active';
 const failures = [];
