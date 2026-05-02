@@ -44,6 +44,7 @@ Out of scope:
 
 - Keep the first app shell static so PR 2 validates tooling and layout without introducing financial math or persistence early.
 - Use a committed shadcn/ui-style `Button` component as the initial component-system anchor.
+- Added durable frontend direction requiring the frontend skill, concrete product UI language, and optional GPT Image references before larger UI buildouts.
 
 ## Validation Evidence
 

@@ -42,6 +42,10 @@ V1 does not provide personalized tax, investment, legal, or financial advice.
 ## UX Principles
 
 - The first screen is the planning workspace, not a marketing page.
+- Frontend implementation tasks must use the frontend skill before making UI changes.
+- UI direction should avoid generic LLM design language: no vague SaaS hero copy, decorative card grids, ornamental gradients, or placeholder feature language that does not help a planner make decisions.
+- Use concrete product surfaces first: assumptions, accounts, projections, scenarios, source metadata, import/export, validation state, and privacy posture.
+- When visual direction is unclear, generate or collect a small set of GPT Image reference images or mockups before implementation. Treat them as art-direction references, not as final UI assets unless explicitly approved.
 - Show assumptions near results.
 - Make import/export explicit and understandable.
 - Preserve privacy expectations: no account creation, no server sync, and no hidden network dependency in v1.
