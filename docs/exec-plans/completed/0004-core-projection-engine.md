@@ -70,5 +70,5 @@ Out of scope:
 
 ## Completion Status
 
-- Status: Ready for PR review.
+- Status: Completed and merged in PR 5.
 - Known limitations: Canada-specific tax, CPP, OAS, registered-account rules, and Monte Carlo are later checkpoints.

@@ -77,6 +77,7 @@ export const planDocumentV1Schema = z
   });
 
 export type AccountType = z.infer<typeof accountTypeSchema>;
+export type Province = z.infer<typeof provinceSchema>;
 export type PlanAccount = z.infer<typeof planAccountSchema>;
 export type PlanAssumptions = z.infer<typeof planAssumptionsSchema>;
 export type PlanDocumentV1 = z.infer<typeof planDocumentV1Schema>;
