@@ -13,7 +13,12 @@ test('loads the retirement workspace shell', async ({ page }) => {
   await expect(
     page.getByRole('heading', { name: 'Retirement workspace' }),
   ).toBeVisible();
-  await expect(page.getByText('Projection preview')).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Projection' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Accounts' })).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: 'Canada rules' }),
+  ).toBeVisible();
+  await expect(page.getByText('CA-2026.1')).toBeVisible();
   await expect(page.getByRole('button', { name: /export/i })).toBeVisible();
   expect(consoleErrors).toEqual([]);
 });
