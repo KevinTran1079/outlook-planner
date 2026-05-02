@@ -71,5 +71,5 @@ Out of scope:
 
 ## Completion Status
 
-- Status: Ready for PR review.
-- Known limitations: App shell is static; data modeling starts in PR 3.
+- Status: Completed and merged in PR 2, with frontend guidance follow-up merged in PR 3.
+- Known limitations: App shell is static; data modeling starts in checkpoint 3.
