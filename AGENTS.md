@@ -6,6 +6,7 @@ This repository is a local-first Canadian retirement planner. Keep this file sho
 
 - TypeScript must follow the [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html).
 - React UI must prefer shadcn/ui components and use Tailwind CSS for styling.
+- Frontend work must use the frontend skill and avoid generic LLM design language.
 - No financial math in React components.
 - All user/imported data must pass schema validation.
 - All financial constants require source metadata and effective dates.
