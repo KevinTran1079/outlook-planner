@@ -71,5 +71,5 @@ Out of scope:
 
 ## Completion Status
 
-- Status: Ready for PR review.
+- Status: Completed and merged in PR 4.
 - Known limitations: Persistence is not yet wired into the UI; that starts in a later checkpoint.
