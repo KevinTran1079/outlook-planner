@@ -70,9 +70,9 @@ Out of scope:
 
 ## Review Feedback
 
-- Pending PR review.
+- PR #8 was approved and merged.
 
 ## Completion Status
 
-- Status: Ready for PR review.
+- Status: Completed.
 - Known limitations: This checkpoint does not add scenario comparison, Monte Carlo simulation, editable forms, or persistence wiring.
