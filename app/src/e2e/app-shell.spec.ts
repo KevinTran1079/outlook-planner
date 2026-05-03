@@ -38,6 +38,15 @@ test('loads the retirement workspace shell', async ({ page }) => {
   ).toBeVisible();
   await expect(page.getByText('CA-2026.1')).toBeVisible();
   await expect(page.getByRole('button', { name: /export/i })).toBeVisible();
+  const balanceBarWidths = await page
+    .locator('#projection .h-2.rounded-full.bg-primary')
+    .evaluateAll((nodes) =>
+      nodes.map((node) => Number.parseFloat((node as HTMLElement).style.width)),
+    );
+  expect(balanceBarWidths.every((width) => width >= 0 && width <= 100)).toBe(
+    true,
+  );
+  expect(balanceBarWidths).toContain(100);
   expect([...unexpectedNetworkRequests]).toEqual([]);
   expect(consoleErrors).toEqual([]);
 });
