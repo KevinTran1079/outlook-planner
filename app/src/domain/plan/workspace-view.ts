@@ -72,6 +72,9 @@ export function createPlanningWorkspaceView(): PlanningWorkspaceView {
     baselineProjectionInput.retirementAge,
   );
   const finalYear = projection.years[projection.years.length - 1];
+  const maxEndingBalanceCents = Math.max(
+    ...projection.years.map((year) => year.endingBalanceCents),
+  );
   const taxEstimate = estimateTaxLite(
     firstYear.incomeCents,
     plan.assumptions.province,
@@ -134,7 +137,7 @@ export function createPlanningWorkspaceView(): PlanningWorkspaceView {
       },
     ],
     milestones: projection.years.map((year) =>
-      createMilestone(year, finalYear.endingBalanceCents),
+      createMilestone(year, maxEndingBalanceCents),
     ),
     ruleSources: [
       {
@@ -180,13 +183,14 @@ function createMilestone(
   year: ProjectionYear,
   maxEndingBalanceCents: number,
 ): ProjectionMilestone {
-  const balancePercent =
+  const balanceRatio =
     maxEndingBalanceCents === 0
       ? 0
-      : Math.max(
-          4,
-          Math.round((year.endingBalanceCents / maxEndingBalanceCents) * 100),
-        );
+      : year.endingBalanceCents / maxEndingBalanceCents;
+  const balancePercent =
+    year.endingBalanceCents === 0
+      ? 0
+      : Math.min(100, Math.max(4, Math.round(balanceRatio * 100)));
 
   return {
     year: year.year,

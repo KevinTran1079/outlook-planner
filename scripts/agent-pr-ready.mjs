@@ -10,6 +10,9 @@ if (!existsSync(activeDir)) {
   if (plans.length === 0) {
     failures.push('At least one active execution plan is required.');
   }
+  if (plans.length > 1) {
+    failures.push('Exactly one active execution plan is required.');
+  }
 
   for (const plan of plans) {
     const path = `${activeDir}/${plan}`;
@@ -26,6 +29,19 @@ if (!existsSync(activeDir)) {
     ]) {
       if (!content.includes(heading)) {
         failures.push(`${path} is missing heading: ${heading}`);
+      }
+    }
+    for (const placeholder of [
+      '<Checkpoint Or Task Name>',
+      'Describe the outcome.',
+      'Item 1.',
+      'Criterion 1.',
+      'TBD.',
+    ]) {
+      if (content.includes(placeholder)) {
+        failures.push(
+          `${path} still contains template placeholder: ${placeholder}`,
+        );
       }
     }
   }

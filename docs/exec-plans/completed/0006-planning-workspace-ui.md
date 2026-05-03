@@ -66,9 +66,9 @@ Out of scope:
 
 ## Review Feedback
 
-- Pending PR review.
+- PR #7 was approved and merged.
 
 ## Completion Status
 
-- Status: Ready for PR review.
+- Status: Completed.
 - Known limitations: Scenario comparison, Monte Carlo, editable plan inputs, and persistence wiring are deferred.

@@ -10,8 +10,8 @@
 | Projection engine         | Started     | PR 5 added deterministic yearly projection engine and fixtures. |
 | Canada rules              | Started     | PR 6 added versioned 2026 Canada rule tables and tests.         |
 | Scenarios and Monte Carlo | Not started | Deferred while PR 7 handles planning UI first.                  |
-| Planning UI               | Started     | PR 7 adds the deterministic planning workspace UI.              |
-| Release hardening         | Not started | Planned for PR 8.                                               |
+| Planning UI               | Completed   | PR 7 merged the deterministic planning workspace UI.            |
+| Release hardening         | Started     | PR 8 tightens readiness and local-first browser checks.         |
 
 ## Quality Gates
 

@@ -9,8 +9,8 @@ export default defineConfig({
   },
   webServer: {
     command: 'npm run dev',
+    reuseExistingServer: !process.env.CI,
     url: 'http://127.0.0.1:5177',
-    reuseExistingServer: false,
   },
   projects: [
     {
