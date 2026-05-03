@@ -8,9 +8,9 @@
 | App scaffold              | Started     | PR 2 added app workspace, tooling, CI, and shell.               |
 | Domain schemas            | Started     | PR 4 added schemas, migrations, storage, and import/export.     |
 | Projection engine         | Started     | PR 5 added deterministic yearly projection engine and fixtures. |
-| Canada rules              | Started     | PR 6 adds versioned 2026 Canada rule tables and tests.          |
-| Scenarios and Monte Carlo | Not started | Planned for PR 6.                                               |
-| Planning UI               | Not started | Planned for PR 7.                                               |
+| Canada rules              | Started     | PR 6 added versioned 2026 Canada rule tables and tests.         |
+| Scenarios and Monte Carlo | Not started | Deferred while PR 7 handles planning UI first.                  |
+| Planning UI               | Started     | PR 7 adds the deterministic planning workspace UI.              |
 | Release hardening         | Not started | Planned for PR 8.                                               |
 
 ## Quality Gates

@@ -66,9 +66,9 @@ Out of scope:
 
 ## Review Feedback
 
-- Pending PR review.
+- PR #6 merged into `main` before PR 7 started.
 
 ## Completion Status
 
-- Status: Ready for PR review.
+- Status: Completed.
 - Known limitations: These are educational tax-lite assumptions, not complete tax calculations.
